@@ -506,7 +506,7 @@ void PhilipsSeries5400::loop() {
                             pubStat(21);   //"Вода есть","Вставлен","Зерна есть","Выберите напиток","Пустой";                  
                          } else if(buffer_displ[6]==0x0C){
                             if     (buffer_displ[7]==0x01){pubStat(8);} //"Наслаждайтесь"
-                            else if(buffer_displ[7]==0x02){pubStat(15);} //"Что-то (07 0C 02)"
+                            else if(buffer_displ[7]==0x02){pubStat(16);} //"Что-то (07 0C 02)"
                          } else if(buffer_displ[6]==0x07){                    
                             if     (buffer_displ[7]==0x0E){pubStat(9);} //"Нагрев воды"
                             else if(buffer_displ[7]==0x0D){pubStat(10);} //"Перемалываем зерна"
